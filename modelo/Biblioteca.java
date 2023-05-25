@@ -25,13 +25,28 @@ public class Biblioteca {
 
     public String getColecciones(){
         String coleccion = "";
+        ArrayList<String> colecciones = new ArrayList<>();
         for (int i = 0; i < misColecciones.size(); i++) {
-            coleccion += misColecciones.get(i).toString() + "\n";
+            if (!colecciones.contains(misColecciones.get(i).getNombreColeccion())) {
+                colecciones.add(misColecciones.get(i).getNombreColeccion());
+            }
         }
+
+        for(int i = 0; i < colecciones.size(); i++){
+            coleccion += colecciones.get(i) + "\n";
+            for (int j = 0; j < misColecciones.size(); j++) {
+                if (colecciones.get(i).equals(misColecciones.get(j).getNombreColeccion())) {
+                    coleccion += misColecciones.get(j).toString() + "\n";
+                }
+            }
+        }
+
         return coleccion;
     }
+        
+        
 
-    public String getLibros(){
+    public String getMisLibros(){
         String libro = "";
         for (int i = 0; i < misLibros.size(); i++) {
             libro += misLibros.get(i).toString() + "\n";

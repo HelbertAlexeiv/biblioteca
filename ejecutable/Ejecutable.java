@@ -50,7 +50,7 @@ public class Ejecutable {
         }while(console.readLine("¿Desea agregar otro libro? (si/no)").equals("si"));
 
         System.out.println("------Libros------");
-        System.out.println(biblioteca.getMisLibros(0).toString());
+        System.out.println(biblioteca.getMisLibros());
 
         System.out.println("------Colecciones------");
         System.out.println(biblioteca.getColecciones());
