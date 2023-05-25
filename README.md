@@ -20,7 +20,7 @@ La app debera llevar una clase ***Biblioteca***, una clase ***Libro***, y una cl
 
 
 # Diseño: 
-***implemente el diagrama de clases en Genmymodel e inclúyalo en el README del repositorio.***
+![Diagrama](class-diagram.png)
 
 # Construcción: 
 ***1. Cree una clase ejecutable a partir de la cual pueda hacer pruebas mediante la consola. (incluya pantallazos en el REDAME del repositorio)  2. Usando el patrón MVC, implemente una app que permita crear y gestionar libros de la biblioteca del Sr. Perez.  (incluya pantallazos en el REDAME del repositorio)***
