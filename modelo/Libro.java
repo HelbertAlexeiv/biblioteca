@@ -44,4 +44,10 @@ public class Libro {
         this.anioEdicion = anioEdicion;
     }
 
+    @Override
+    public String toString() {
+        return "Libro añoEdicion=" + anioEdicion + ", autor=" + autor + ", lujo=" + lujo + ", nombreLibro="
+                + nombreLibro;
+    }
+
 }

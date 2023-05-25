@@ -12,7 +12,7 @@ aparecer “y otros”.
 # Análisis: 
 ***identificación de clases, con sus respectivos atributos y métodos requeridos.***
 
-La app debera llevar una clase ***Biblioteca*** y una clase ***Libro***, la biblioteca se encargara de gestionar varios libros.
+La app debera llevar una clase ***Biblioteca***, una clase ***Libro***, y una clase ***Colecciones*** que hereda de Libro, la biblioteca se encargara de gestionar varios libros y si el libro es pertenece a una coleccion se guardara como una coleccion.
 
 ***Biblioteca***, tendra un arrayList misLbros en el que se guardaran objetos de tipo libro y metodos de acceso para ese arrayList.
 

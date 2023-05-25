@@ -21,4 +21,12 @@ public class Biblioteca {
     public void addMisColecciones(Coleccion coleccion){
         misColecciones.add(coleccion);
     }
+
+    public String getColecciones(){
+        String coleccion = "";
+        for (int i = 0; i < misColecciones.size(); i++) {
+            coleccion += misColecciones.get(i).toString() + "\n";
+        }
+        return coleccion;
+    }
 }

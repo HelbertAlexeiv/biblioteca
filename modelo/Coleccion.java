@@ -18,4 +18,9 @@ public class Coleccion extends Libro{
     public int getNumeroColeccion() {
         return numeroColeccion;
     }
+
+    @Override
+    public String toString() {
+        return "Coleccion nombreColeccion = " + nombreColeccion + ", numero del libro = " + numeroColeccion;
+    }
 }
