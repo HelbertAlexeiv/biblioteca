@@ -1,5 +1,6 @@
 package modelo;
 
+import java.io.ObjectInputStream.GetField;
 import java.util.ArrayList;
 
 public class Biblioteca {
@@ -29,4 +30,13 @@ public class Biblioteca {
         }
         return coleccion;
     }
+
+    public String getLibros(){
+        String libro = "";
+        for (int i = 0; i < misLibros.size(); i++) {
+            libro += misLibros.get(i).toString() + "\n";
+        }
+        return libro;
+    }
+
 }

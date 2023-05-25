@@ -16,36 +16,37 @@ public class Ejecutable {
         Libro libro;
         
         do{
-        String nombreLibro = console.readLine("Ingrese el nombre del libro: ");
-        String autor = console.readLine("Ingrese el autor del libro: ");
-        int anioEdicion = Integer.parseInt(console.readLine("Ingrese el año de edición del libro: "));
-        boolean lujo;
+            String nombreLibro = console.readLine("Ingrese el nombre del libro: ");
+            String autor = console.readLine("Ingrese el autor del libro: ");
+            int anioEdicion = Integer.parseInt(console.readLine("Ingrese el año de edición del libro: "));
+            boolean lujo;
         
-        System.out.println("¿El libro es de lujo? (si/no)");
+            System.out.println("¿El libro es de lujo? (si/no)");
         
-        if (console.readLine().equals("si")) {
+            if (console.readLine().equals("si")) {
             
-            lujo = true;
-            libro = new Libro(nombreLibro, autor, anioEdicion, lujo);
-            biblioteca.addMisLibros(libro);
-        } else {
+                lujo = true;
+                libro = new Libro(nombreLibro, autor, anioEdicion, lujo);
+                biblioteca.addMisLibros(libro);
+            } else {
             
-            lujo = false;
-            libro = new Libro(nombreLibro, autor, anioEdicion, lujo);
-            biblioteca.addMisLibros(libro);
-        }
+                lujo = false;
+                libro = new Libro(nombreLibro, autor, anioEdicion, lujo);
+                biblioteca.addMisLibros(libro);
+            }
 
-        System.out.println("¿El libro es parte de una colección? (si/no)");
-        if(console.readLine().equals("si")){
+            System.out.println("¿El libro es parte de una colección? (si/no)");
+            if(console.readLine().equals("si")){
             
-            String nombreColeccion = console.readLine("Ingrese el nombre de la colección: ");
+                String nombreColeccion = console.readLine("Ingrese el nombre de la colección: ");
             
-            int numeroColeccion = Integer.parseInt(console.readLine("Ingrese el número de la colección: "));
+                int numeroColeccion = Integer.parseInt(console.readLine("Ingrese el número de la colección: "));
             
-            Coleccion coleccion = new modelo.Coleccion(nombreLibro, autor, anioEdicion, lujo, nombreColeccion, numeroColeccion);
+                Coleccion coleccion = new modelo.Coleccion(nombreLibro, autor, anioEdicion, lujo, nombreColeccion, numeroColeccion);
             
-            biblioteca.addMisColecciones(coleccion);
-        }
+                biblioteca.addMisColecciones(coleccion);
+            }
+            System.out.println("\n\n");
         }while(console.readLine("¿Desea agregar otro libro? (si/no)").equals("si"));
 
         System.out.println("------Libros------");
